@@ -1,0 +1,38 @@
+.category-wrapper {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	@media screen and (min-width: 375px) {
+		grid-template-columns: 1fr;
+	}
+
+	img {
+		object-fit: cover;
+		object-position: center;
+	}
+}
+
+.images-container {
+	img {
+		object-fit: cover;
+		object-position: center;
+	}
+}
+
+.category-link-wrapper {
+	height: 90px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	justify-items: center;
+	align-items: center;
+}
+
+.category-link {
+	font-size: 1.5em;
+	a {
+		color: #ffa0bd;
+		text-decoration: none;
+		&:hover {
+			color: #ff5594;
+		}
+	}
+}

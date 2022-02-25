@@ -1,0 +1,39 @@
+.wrapper-dresses {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+
+	.item-dress {
+		margin: auto;
+		width: 400px;
+		padding: 30px;
+		background-image: url('../../static/assets/images/fondo.jpg');
+
+		img {
+			width: 400px;
+			height: 660px;
+			object-fit: cover;
+			object-position: center;
+		}
+
+		button {
+			cursor: pointer;
+			height: 42px;
+			font-size: 1em;
+			font-weight: 500;
+			font-weight: bold;
+			border: 1px solid transparent;
+			transition: all 0.5s ease-in-out;
+			background-color: #ffa0bd;
+			color: white;
+
+			&:active,
+			&:focus {
+				outline: none;
+			}
+
+			&:hover {
+				background-color: #ff5594;
+			}
+		}
+	}
+}

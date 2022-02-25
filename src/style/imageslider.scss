@@ -1,0 +1,36 @@
+.wrapper-slides {
+	background: #f7f8fa;
+	margin: auto;
+	width: 400px;
+	padding: 30px;
+}
+.slides .slick-prev,
+.slides .slick-next {
+	position: absolute;
+	top: 50%;
+	z-index: 1;
+}
+
+.slides {
+	position: relative;
+}
+
+.slick-slider {
+	object-fit: cover;
+	object-position: center;
+}
+
+.slides .slick-prev,
+.slides .slick-next {
+	position: absolute;
+	top: 50%;
+	z-index: 1;
+}
+
+.slides .slick-prev {
+	left: 5%;
+}
+
+.slides .slick-next {
+	right: 5%;
+}

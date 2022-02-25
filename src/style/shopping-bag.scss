@@ -1,0 +1,108 @@
+.wrapper-shopping-bag {
+	margin-top: 65px;
+	margin-left: 100px;
+	width: 90vw;
+	display: grid;
+	height: calc(100% - 100px);
+	grid-template-columns: 1fr 1fr;
+
+	.bag-items-left {
+		background-image: url('../../static/assets/images/pinkflower.jpg');
+	}
+
+	.bag-items-right {
+		display: flex;
+		justify-content: center;
+		align-items: flex-start;
+		font-size: 1.25rem;
+		margin: 2px;
+		gap: 10px;
+	}
+}
+
+.wrapper-button {
+	display: flex;
+
+	button {
+		cursor: pointer;
+		display: inline-block;
+		font-weight: bold;
+		font-size: 1rem;
+		padding: 0.5em 1em;
+		background: gray;
+		color: white;
+		border-radius: 2em;
+		border: none;
+	}
+}
+
+.complete-order {
+	input {
+		cursor: pointer;
+		height: 42px;
+		font-size: 1em;
+		border: 1px solid transparent;
+		border-radius: 0.25em;
+		transition: all 0.5s ease-in-out;
+		background-color: #dddd;
+		color: black;
+
+		&:active,
+		&:focus {
+			outline: none;
+		}
+
+		&:hover {
+			color: white;
+			background-color: gray;
+		}
+	}
+}
+.wrapper-items-bag {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-end;
+	align-content: flex-end;
+	margin: 2px;
+	gap: 2px;
+}
+
+.wrapper-bag-items {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	font-size: 1.25rem;
+	margin: 2px;
+	gap: 10px 20px;
+	.bag {
+		font-size: 1.5rem;
+	}
+}
+
+.product-bag-item {
+	font-size: 1.25rem;
+	display: flex;
+	gap: 10px 20px;
+	align-items: center;
+	margin: 10px;
+	justify-content: flex-end;
+
+	button {
+		cursor: pointer;
+		height: 42px;
+		font-size: 1em;
+		border: 1px solid transparent;
+		transition: all 0.5s ease-in-out;
+		background-color: #ffa0bd;
+		color: white;
+
+		&:active,
+		&:focus {
+			outline: none;
+		}
+
+		&:hover {
+			background-color: #ff5594;
+		}
+	}
+}
