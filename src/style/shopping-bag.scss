@@ -106,3 +106,24 @@
 		}
 	}
 }
+
+@media screen and (max-width: 768px) {
+	.wrapper-shopping-bag {
+		display: grid;
+		grid-template-columns: 1fr;
+		margin-left: 50px;
+
+		.bag-items-left {
+			width: 500px;
+			height: 300px;
+		}
+	}
+	.product-bag-item {
+		font-size: 0.8rem;
+		display: flex;
+		gap: 5px 10px;
+		align-items: center;
+		margin: 5px;
+		justify-content: center;
+	}
+}

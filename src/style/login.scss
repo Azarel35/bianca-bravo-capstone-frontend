@@ -1,7 +1,6 @@
 .wrapper-login {
-	display: flex;
-	justify-content: center;
-	align-items: flex-start;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
 	margin-top: 100px;
 	margin-left: 300px;
 
@@ -27,7 +26,7 @@
 }
 
 .right-column {
-	margin-left: 100px;
+	margin-left: 10px;
 
 	button {
 		cursor: pointer;
@@ -47,6 +46,26 @@
 
 		&:hover {
 			background-color: #ff5594;
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.wrapper-login {
+		display: grid;
+		grid-template-columns: 1fr;
+		margin-top: 33px;
+		margin-left: 100px;
+
+		input {
+			width: 250px;
+		}
+
+		.left-column img {
+			object-fit: cover;
+			object-position: center;
+			height: 200px;
+			width: 350px;
 		}
 	}
 }

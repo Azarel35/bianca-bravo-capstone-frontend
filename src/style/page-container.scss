@@ -1,9 +1,6 @@
 .category-wrapper {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	@media screen and (min-width: 375px) {
-		grid-template-columns: 1fr;
-	}
 
 	img {
 		object-fit: cover;
@@ -33,6 +30,21 @@
 		text-decoration: none;
 		&:hover {
 			color: #ff5594;
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.category-link-wrapper {
+		display: grid;
+		grid-template-columns: 1fr;
+		margin-top: 10px;
+	}
+
+	.images-container {
+		img {
+			width: 185px;
+			height: 95px;
 		}
 	}
 }

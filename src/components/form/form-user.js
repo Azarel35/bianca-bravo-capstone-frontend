@@ -46,6 +46,15 @@ export default function FormUser() {
 							/>
 						</div>
 
+						<div className="form-password">
+							<input
+								type="password"
+								className="form-control"
+								placeholder="Password"
+								name="password"
+							/>
+						</div>
+
 						<div className="form-street">
 							<input
 								type="address"
