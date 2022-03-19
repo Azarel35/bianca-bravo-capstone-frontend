@@ -42,6 +42,7 @@ export default class Login extends Component {
 
 		event.preventDefault();
 		this.props.history.push('/');
+		this.props.history.push('/dresses');
 	}
 
 	render() {

@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBagShopping } from '@fortawesome/free-solid-svg-icons';
 import { faUser } from '@fortawesome/free-solid-svg-icons';
+import { faRightFromBracket } from '@fortawesome/free-solid-svg-icons';
 
 export default class Navbar extends Component {
 	constructor() {
@@ -37,6 +38,13 @@ export default class Navbar extends Component {
 						<NavLink to="/shopping-bag" activeClassName="nav-link-active">
 							<div className="icon-bag">
 								<FontAwesomeIcon icon={faBagShopping} />
+							</div>
+						</NavLink>
+					</div>
+					<div className="right-login">
+						<NavLink to="/logout" activeClassName="nav-link-active">
+							<div className="icon-logout">
+								<FontAwesomeIcon icon={faRightFromBracket} />
 							</div>
 						</NavLink>
 					</div>

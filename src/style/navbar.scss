@@ -81,3 +81,15 @@
 		letter-spacing: 4px;
 	}
 }
+
+.icon-logout {
+	cursor: pointer;
+	color: #ffa0bd;
+	font-size: 1.5em;
+	transition: 0.5s ease-in-out;
+
+	&:hover {
+		color: #ff5594;
+		letter-spacing: 4px;
+	}
+}
