@@ -8,20 +8,7 @@ import desc from '../../../static/assets/images/desc.jpg';
 import flowers from '../../../static/assets/images/flowers.jpg';
 
 export default class PageContainer extends Component {
-	constructor() {
-		super();
-
-		this.state = {
-			isLoading: true,
-		};
-	}
-
 	render() {
-		const emailLog = sessionStorage.getItem('email');
-		if (this.state.isLoading && emailLog !== 'bianca01@test.com') {
-			return <div>You must log in and then click on BA&SH</div>;
-		}
-
 		return (
 			<div>
 				<div className="images-container">

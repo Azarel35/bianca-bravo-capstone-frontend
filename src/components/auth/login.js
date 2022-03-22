@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 
-import loginImg from '../../../static/assets/images/login.jpg';
-
 export default class Login extends Component {
 	constructor(props) {
 		super(props);
@@ -33,24 +31,28 @@ export default class Login extends Component {
 			.then((response) => {
 				console.log(response);
 				sessionStorage.setItem('email', response.data.user_email);
+				const emailLog = sessionStorage.getItem('email');
+				if (emailLog == 'bianca01@test.com') {
+					return this.props.handleSuccessfulAuth();
+				}
+				this.props.handleUnsuccessfulAuth();
+				this.setState({
+					errorText: 'An error occurred',
+				});
 			})
 			.catch((error) => {
 				this.setState({
 					errorText: 'An error occurred',
 				});
+				this.props.handleUnsuccessfulAuth();
 			});
 
 		event.preventDefault();
-		this.props.history.push('/');
-		this.props.history.push('/dresses');
 	}
 
 	render() {
 		return (
 			<div className="wrapper-login">
-				<div className="left-column">
-					<img src={loginImg} />
-				</div>
 				<div className="right-column">
 					<h1>Login to access </h1>
 

@@ -4,10 +4,19 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBagShopping } from '@fortawesome/free-solid-svg-icons';
 import { faUser } from '@fortawesome/free-solid-svg-icons';
 import { faRightFromBracket } from '@fortawesome/free-solid-svg-icons';
+import Home from './pages/home';
 
 export default class Navbar extends Component {
 	constructor() {
 		super();
+
+		this.handleSignOut = this.handleSignOut.bind(this);
+	}
+
+	handleSignOut() {
+		sessionStorage.clear();
+		this.props.handleSuccessfulLogout();
+		return <Home />;
 	}
 
 	render() {
@@ -42,11 +51,11 @@ export default class Navbar extends Component {
 						</NavLink>
 					</div>
 					<div className="right-login">
-						<NavLink to="/logout" activeClassName="nav-link-active">
-							<div className="icon-logout">
+						<div className="icon-logout">
+							<a onClick={this.handleSignOut}>
 								<FontAwesomeIcon icon={faRightFromBracket} />
-							</div>
-						</NavLink>
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>

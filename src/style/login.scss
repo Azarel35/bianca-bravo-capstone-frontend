@@ -1,8 +1,7 @@
 .wrapper-login {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	margin-top: 100px;
-	margin-left: 300px;
+	margin-top: 90px;
 
 	input {
 		font-family: 'Raleway', sans-serif;
@@ -50,15 +49,26 @@
 	}
 }
 
+.left-column {
+	margin-left: 200px;
+}
+
 @media screen and (max-width: 768px) {
 	.wrapper-login {
 		display: grid;
 		grid-template-columns: 1fr;
 		margin-top: 33px;
-		margin-left: 100px;
 
 		input {
 			width: 250px;
+		}
+
+		.left-column {
+			margin-left: 50px;
+		}
+
+		.right-column {
+			margin-left: 50px;
 		}
 
 		.left-column img {
