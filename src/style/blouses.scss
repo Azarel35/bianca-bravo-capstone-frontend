@@ -41,5 +41,24 @@
 	.wrapper-blouses {
 		display: grid;
 		grid-template-columns: 1fr;
+
+		.item-blouse {
+			font-size: 0.65em;
+			margin: auto;
+			width: 200px;
+			padding: 10px;
+			background-image: url('../../static/assets/images/fondo.jpg');
+
+			img {
+				width: 200px;
+				height: 360px;
+				object-fit: cover;
+				object-position: center;
+			}
+			button {
+				height: 22px;
+				font-size: 0.65em;
+			}
+		}
 	}
 }
