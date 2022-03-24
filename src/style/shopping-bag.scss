@@ -114,7 +114,7 @@
 		margin-left: 50px;
 
 		.bag-items-left {
-			width: 350px;
+			width: 250px;
 			height: 550px;
 		}
 	}
@@ -125,5 +125,10 @@
 		align-items: center;
 		margin: 5px;
 		justify-content: center;
+	}
+
+	.wrapper-bag-items {
+		font-size: 0.75rem;
+		margin: 2px;
 	}
 }

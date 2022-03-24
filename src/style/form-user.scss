@@ -51,8 +51,12 @@
 @media (max-width: 615px) {
 	.form-container {
 		input {
-			width: 300px;
+			width: 200px;
 			font-size: 1em;
 		}
+	}
+
+	.wrapper-form {
+		font-size: 0.75rem;
 	}
 }
