@@ -1,0 +1,15 @@
+.wrapper-welcom {
+	height: 600px;
+	display: flex;
+	justify-content: center;
+	align-self: center;
+	align-items: center;
+}
+
+@media (max-width: 615px) {
+	.wrapper-welcom {
+		height: 100%;
+		width: 100%;
+		font-size: 0.5em;
+	}
+}

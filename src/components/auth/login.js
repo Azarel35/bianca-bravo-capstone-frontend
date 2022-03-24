@@ -29,10 +29,9 @@ export default class Login extends Component {
 				password: this.state.password,
 			})
 			.then((response) => {
-				console.log(response);
+				console.log(response, 'aqui respuesta');
 				sessionStorage.setItem('email', response.data.user_email);
-				const emailLog = sessionStorage.getItem('email');
-				if (emailLog == 'bianca01@test.com') {
+				if (response.data.user_email) {
 					return this.props.handleSuccessfulAuth();
 				}
 				this.props.handleUnsuccessfulAuth();

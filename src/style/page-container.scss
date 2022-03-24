@@ -34,17 +34,22 @@
 	}
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 615px) {
 	.category-link-wrapper {
 		display: grid;
 		grid-template-columns: 1fr;
 		margin-top: 10px;
+		height: 100%;
+	}
+
+	.category-link-wrapper {
+		font-size: 0.75em;
 	}
 
 	.images-container {
 		img {
-			width: 185px;
-			height: 95px;
+			width: 155px;
+			height: 85px;
 		}
 	}
 }

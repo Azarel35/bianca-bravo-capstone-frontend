@@ -103,7 +103,6 @@ export default class App extends Component {
 								)}
 							/>
 
-							<Route exact path="/shopping-bag" component={ShoppingBag} />
 							<Route exact path="/form-user" component={FormUser} />
 
 							<Route component={NoMatch} />

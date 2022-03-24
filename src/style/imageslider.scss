@@ -34,3 +34,10 @@
 .slides .slick-next {
 	right: 5%;
 }
+
+@media (max-width: 615px) {
+	.wrapper-slides {
+		width: 280px;
+		margin-top: 20px;
+	}
+}

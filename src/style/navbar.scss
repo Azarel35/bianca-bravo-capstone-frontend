@@ -93,3 +93,10 @@
 		letter-spacing: 4px;
 	}
 }
+
+@media (max-width: 615px) {
+	.navbar-wrapper {
+		flex-direction: column;
+		height: 200px;
+	}
+}

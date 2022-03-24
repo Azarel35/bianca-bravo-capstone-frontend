@@ -38,9 +38,15 @@
 	}
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 615px) {
 	.wrapper-dresses {
 		display: grid;
 		grid-template-columns: 1fr;
+		height: 100%;
+	}
+
+	.item-dress {
+		margin: auto;
+		width: 100%;
 	}
 }
