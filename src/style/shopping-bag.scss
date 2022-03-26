@@ -1,28 +1,28 @@
 .wrapper-shopping-bag {
-	margin-top: 65px;
-	margin-left: 100px;
-	width: 90vw;
-	display: grid;
-	height: calc(100% - 100px);
-	grid-template-columns: 1fr 1fr;
-
-	.bag-items-left {
-		background-image: url('../../static/assets/images/pinkflower.jpg');
-	}
+	display: flex;
+	height: calc(100vh - 84px);
+	justify-content: space-between;
+	margin: 90px;
 
 	.bag-items-right {
+		width: 50%;
+		padding: 50px;
 		display: flex;
 		justify-content: center;
 		align-items: flex-start;
-		font-size: 1.25rem;
 		margin: 2px;
 		gap: 10px;
 	}
 }
 
+.bag-items-left {
+	width: 50%;
+	height: 60%;
+	padding: 50px;
+	background-image: url('../../static/assets/images/pinkflower.jpg');
+	background-position: relative;
+}
 .wrapper-button {
-	display: flex;
-
 	button {
 		cursor: pointer;
 		display: inline-block;
@@ -67,20 +67,8 @@
 	gap: 2px;
 }
 
-.wrapper-bag-items {
-	display: flex;
-	flex-direction: column;
-	align-items: flex-end;
-	font-size: 1.25rem;
-	margin: 2px;
-	gap: 10px 20px;
-	.bag {
-		font-size: 1.5rem;
-	}
-}
-
 .product-bag-item {
-	font-size: 1.25rem;
+	font-size: 1rem;
 	display: flex;
 	gap: 10px 20px;
 	align-items: center;
@@ -90,7 +78,7 @@
 	button {
 		cursor: pointer;
 		height: 42px;
-		font-size: 1em;
+		font-size: 0.8rem;
 		border: 1px solid transparent;
 		transition: all 0.5s ease-in-out;
 		background-color: #ffa0bd;
@@ -109,26 +97,37 @@
 
 @media (max-width: 615px) {
 	.wrapper-shopping-bag {
-		display: grid;
-		grid-template-columns: 1fr;
-		margin-left: 50px;
-
-		.bag-items-left {
-			width: 250px;
-			height: 550px;
-		}
+		flex-direction: column;
+		margin: 0px;
 	}
+
+	.wrapper-items-bag {
+		display: flex;
+		flex-direction: column;
+		margin: 0px;
+		gap: 0px;
+	}
+
 	.product-bag-item {
 		font-size: 0.8rem;
 		display: flex;
-		gap: 5px 10px;
+		gap: 0px;
 		align-items: center;
-		margin: 5px;
+		margin: 0px;
 		justify-content: center;
+		button {
+			height: 22px;
+			font-size: 0.5rem;
+		}
 	}
 
 	.wrapper-bag-items {
 		font-size: 0.75rem;
-		margin: 2px;
+		margin: 0px;
+	}
+
+	.bag-items-left {
+		margin-top: 0px;
+		margin-left: 50px;
 	}
 }

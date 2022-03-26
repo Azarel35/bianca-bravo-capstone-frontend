@@ -12,14 +12,9 @@ export default class PageContainer extends Component {
 		return (
 			<div>
 				<div className="images-container">
-					<img
-						src={flowers}
-						width="531px"
-						height="200px"
-						media="(max-width:	400px)"
-					/>
-					<img src={desc} />
-					<img src={flowers} width="531px" height="200px" />
+					<img src={flowers} width="33.1%" height="200px" />
+					<img src={desc} width="33.1%" />
+					<img src={flowers} width="33.1%" height="200px" />
 				</div>
 				<div className="category-link-wrapper">
 					<div className="category-link">

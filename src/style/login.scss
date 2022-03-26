@@ -2,12 +2,13 @@
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	margin-top: 90px;
+	height: calc(100vh - 84px);
 
 	input {
 		font-family: 'Raleway', sans-serif;
 		color: black;
 		padding: 5px 0px;
-		width: 500px;
+		width: 60%;
 		border-top: 0px;
 		border-right: 0px;
 		border-left: 0px;
@@ -24,8 +25,13 @@
 	}
 }
 
+.wrapper-input {
+	margin-top: 90px;
+}
+
 .right-column {
-	margin-left: 10px;
+	margin-left: 0px;
+	width: 100%;
 
 	button {
 		cursor: pointer;
@@ -53,30 +59,18 @@
 	margin-left: 200px;
 }
 
+.left-column img {
+	width: 70%;
+}
+
 @media (max-width: 615px) {
 	.wrapper-login {
 		display: grid;
 		grid-template-columns: 1fr;
-		margin-top: 33px;
-
-		input {
-			width: 250px;
-		}
-
-		.left-column {
-			margin-left: 50px;
-		}
 
 		.right-column {
-			margin-left: 50px;
+			margin: 50px;
 			font-size: 0.75rem;
-		}
-
-		.left-column img {
-			object-fit: cover;
-			object-position: center;
-			height: 150px;
-			width: 250px;
 		}
 	}
 }

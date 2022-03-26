@@ -1,19 +1,21 @@
 .wrapper-blouses {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
+	height: calc(100vh - 84px);
 
 	.item-blouse {
-		margin: auto;
-		width: 400px;
+		margin: 30px;
+		width: 70%;
 		padding: 30px;
 		background-image: url('../../static/assets/images/fondo.jpg');
 
 		img {
-			width: 400px;
-			height: 660px;
+			width: 88%;
+			height: 600px;
 			object-fit: cover;
 			object-position: center;
 		}
+
 		button {
 			cursor: pointer;
 			height: 42px;
@@ -43,22 +45,7 @@
 		grid-template-columns: 1fr;
 
 		.item-blouse {
-			font-size: 0.65em;
-			margin: auto;
-			width: 200px;
-			padding: 10px;
-			background-image: url('../../static/assets/images/fondo.jpg');
-
-			img {
-				width: 200px;
-				height: 360px;
-				object-fit: cover;
-				object-position: center;
-			}
-			button {
-				height: 22px;
-				font-size: 0.65em;
-			}
+			font-size: 0.85em;
 		}
 	}
 }

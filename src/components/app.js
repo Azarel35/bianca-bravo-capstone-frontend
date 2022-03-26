@@ -10,7 +10,6 @@ import Auth from './auth/auth';
 import NoMatch from './pages/no-match';
 import ShoppingBag from './bag/shopping-bag';
 import FormUser from './form/form-user';
-import PageFooter from './footer-page';
 
 export default class App extends Component {
 	constructor(props) {
@@ -79,7 +78,6 @@ export default class App extends Component {
 								/>
 								<Route component={NoMatch} />
 							</Switch>
-							<PageFooter />
 						</div>
 					</Router>
 				</div>
@@ -107,7 +105,6 @@ export default class App extends Component {
 
 							<Route component={NoMatch} />
 						</Switch>
-						<PageFooter />
 					</div>
 				</Router>
 			</div>

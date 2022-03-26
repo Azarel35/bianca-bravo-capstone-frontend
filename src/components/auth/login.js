@@ -51,7 +51,7 @@ export default class Login extends Component {
 
 	render() {
 		return (
-			<div className="wrapper-login">
+			<div className="wrapper-input">
 				<div className="right-column">
 					<h1>Login to access </h1>
 
